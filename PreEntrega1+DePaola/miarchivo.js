@@ -35,9 +35,11 @@ while(jugador != 1 && jugador != 2 && jugador != 3 ){
 
 }
 
+//junto juego y jugador seleccionado
 juego_jugador = tipoJuego+'_'+jugador
 
 
+//Busco imagen correspondiente a la seleccion
 switch(juego_jugador){
 	
 	case "futbol_1":
