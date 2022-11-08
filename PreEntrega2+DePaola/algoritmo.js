@@ -1,6 +1,6 @@
 
 
-
+//Variables
 let verInfo;
 let verInfo_seleccion;
 
@@ -42,6 +42,25 @@ let frase15 = 'SUMAR JUGADORES\n\n1. Agregar manualmente un jugador amigo\n2. Qu
 let frase16 = 'Ingresa el nombre del jugador';
 let frase17 = 'Ingresa el apodo del jugador';
 
+
+
+
+
+
+
+
+/*
+# #    # #  ####  #  ####  
+# ##   # # #    # # #    # 
+# # #  # # #      # #    # 
+# #  # # # #      # #    # 
+# #   ## # #    # # #    # 
+# #    # #  ####  #  ####
+*/
+
+
+
+//Bienvenida
 alert(frase1);
 alert(frase2);
 alert(frase3);
@@ -194,4 +213,15 @@ alert('Ellos serán tus amigos del partido:\n\n'+imprimirJugadores);
 	precioPorPersona = calcular_valorCancha_xPersona(canchaSeleccionada_OBJ.precio, canchaSeleccionada_OBJ.cantidadJugadores);
 
 alert('¡Y recuerda!\n\n Deben pagar $'+precioPorPersona+' cada uno para alquiler de la cancha :P');
+
+
+
+/*
+###### # #    # 
+#      # ##   # 
+#####  # # #  # 
+#      # #  # # 
+#      # #   ## 
+#      # #    # 
+*/
 
