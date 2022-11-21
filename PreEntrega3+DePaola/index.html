@@ -9,6 +9,8 @@
 
 	<!-- 	fonts 						-->
 	<link rel="stylesheet" href="./css/fonts.css?2021_8_20_2231">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!--
 	<link rel="stylesheet" href="./lib/materialize/materialize.css?2021_8_20_2231">
 -->
@@ -18,9 +20,127 @@
 	
 	<link rel="stylesheet" href="./css/style.css?2021_8_20_2231">
 
+
+
+
+
+
+
 </head>
 
 <body>
+
+
+
+
+	<!-- Fondo negro -->
+	<div id="fondo_negro">
+		
+
+		<!-- PopUp Perfil -->
+		<div id="popUp_perfil_content">
+			<img id="popUp_perfil_photo" src="./img/players/manu_ginobilli.jpg" alt="">
+
+			<div id="popUp_tit"><span class="segoe_semiblond">Manu </span>Ginobili</div>
+
+
+			<div id="popUp_quali">
+				4.7
+				<img id="popUp_star" src="./img/star_png.png" alt="">
+			</div>
+
+		</div>	
+
+
+
+		<!-- PopUp Crear partido -->
+		<div id="popUp_newpartido_cont">
+			
+			<img id="popUp_newpart_photo" src="./img/balls/basket_png.png" alt="">
+
+			<div id="popUp_tit">Crear partido</div>
+
+			<select id="select_newpartido">
+				<option value="0">Futbol</option>	
+				<option value="1">Basquet</option>	
+				<option value="2">Tenis</option>	
+				<i></i>
+			</select>
+
+			<input placeholder="Lugar" type="text" id="" class="inputs">
+			<input placeholder="Suelo" type="text" id="" class="inputs">
+			<input placeholder="Cantidad de jugadores" type="number" id="" class="inputs">
+			<input placeholder="$ Valor" type="number" id="" class="inputs">
+
+			<button id="btnCrearPart_content">
+				<div id="btnCrearPart_txt">Crear</div>
+			</button>
+
+		</div>	
+		
+
+
+
+		<!-- PopUp Sumarse a partido -->
+		<div id="popUp_sumarsePart_cont">
+			
+			<img id="popUp_sumarsePart_photo" src="./img/balls/tennis_png.png" alt="">
+	
+			<div id="popUp_sumarsePart_info_cont">
+				<div id="sumarsePart_tit">El Palomar</div>
+
+				<div id="sumarPart_suelo">Polvo de ladrillo</div>
+				<div id="sumarPart_jugadores">3 Jugadores confirmados de 4</div>
+
+				<div id="sumarPart_Precio">$1500</div>
+			</div>
+
+			<button id="btn_sumarsePart_content">
+				<div id="btn_sumarsePart_txt">Sumarse</div>
+			</button>
+
+		</div>	
+
+
+
+		<!-- PopUp Baja a partido -->
+		<div id="popUp_bajaPart_cont">
+			
+			<img id="popUp_bajaPart_photo" src="./img/balls/tennis_png.png" alt="">
+	
+			<div id="popUp_bajaPart_info_cont">
+				<div id="bajaPart_tit">El Palomar</div>
+
+				<div id="bajaPart_suelo">Polvo de ladrillo</div>
+				<div id="bajaPart_jugadores">3 Jugadores confirmados de 4</div>
+
+				<div id="bajaPart_Precio">$1500</div>
+			</div>
+
+			<button id="btn_bajaPart_content">
+				<div id="btn_bajaPart_txt">Darse de baja</div>
+			</button>
+
+		</div>	
+
+
+		<!-- PopUp info -->
+		<div id="popUp_info_content">
+			
+
+			<div id="popUp_tit"><span class="segoe_semiblond">N</span>otificación</div>
+
+			<div id="popUp_info_txt">Te has unido al partido correctamente</div>
+			
+
+		</div>
+
+
+	</div>
+
+
+	
+
 
 	<!-- Banner -->
 	<section id=cointainer_banner>
@@ -32,10 +152,14 @@
 		<img id="img_logo" src="./img/logo.png" alt="">
 	</section>
 
+
+
+
+
 	<!-- Jugadores Online -->
 	<section class="section_gral" id="section_jugOn">
 
-		<div class="section_titulo">
+		<div class="section_titulo" id="jug_on_tit">
 			<span class="segoe_semiblond">Jugadores </span>Online
 		</div>
 
@@ -111,6 +235,10 @@
 
 
 
+
+
+
+
 	<!-- Partidos abiertos -->
 	<section class="section_gral" >
 
@@ -158,7 +286,7 @@
 				</div>
 
 				<div class="partAb_img_container">
-					<img class="partAb_img" src="./img/canchas/tenis_1.jpg" alt="">	
+					<img class="partAb_img" data-id="3" src="./img/canchas/basquet_1.jpg" alt="">
 					
 					<div class="partAv_txt_content">
 						<div class="partAb_tit" >Básquet Pilar</div>			
@@ -178,7 +306,7 @@
 				</div>
 
 				<div class="partAb_img_container">
-					<img class="partAb_img" data-id="3" src="./img/canchas/basquet_1.jpg" alt="">
+					<img class="partAb_img" src="./img/canchas/tenis_1.jpg" alt="">	
 					
 					<div class="partAv_txt_content">
 						<div class="partAb_tit" >Tenis - Ciudad Jardín</div>			
@@ -206,6 +334,99 @@
 
 
 
+
+	<!-- Partidos Confirmados -->
+	<section class="section_gral" id="section_partConf">
+
+		<div class="section_titulo">
+			<span class="segoe_semiblond">Tus Partidos</span> confirmados
+		</div>
+
+		<div id="partConf_container" >
+
+			<div id="partConf_SubContainer" >
+
+
+				<div class="partConf_img_container">
+					<img class="partConf_img" data-id="1" id="a1" src="./img/canchas/tenis_2.jpg" alt="">
+
+					<div class="partConf_txt_content">
+						<div class="partConf_tit" >Tenis</div>			
+						<div class="partConf_sub">El Palomar</div>			
+						<div class="partConf_pre">$1500</div>	
+					</div>
+				</div>
+
+
+				<div class="partConf_img_container">
+					<img class="partConf_img" data-id="1" id="a1" src="./img/canchas/tenis_1.jpg" alt="">
+
+					<div class="partConf_txt_content">
+						<div class="partConf_tit" >Tenis</div>			
+						<div class="partConf_sub">Ciudad Jardín</div>			
+						<div class="partConf_pre">$1200</div>	
+					</div>
+				</div>
+
+				<div class="partConf_img_container">
+					<img class="partConf_img" data-id="1" id="a1" src="./img/canchas/basquet_1.jpg" alt="">
+
+					<div class="partConf_txt_content">
+						<div class="partConf_tit" >Básquet</div>			
+						<div class="partConf_sub">Pilar</div>			
+						<div class="partConf_pre">$950</div>	
+					</div>
+				</div>
+
+
+				<div class="partConf_img_container">
+					<img class="partConf_img" data-id="1" id="a1" src="./img/canchas/futbol_1.png" alt="">
+
+					<div class="partConf_txt_content">
+						<div class="partConf_tit" >Futbol 5</div>			
+						<div class="partConf_sub">Villa Bosch</div>			
+						<div class="partConf_pre">$650</div>	
+					</div>
+				</div>
+
+				<!--
+				<div class="partConf_img_container">
+					<img class="partConf_img" data-id="1" id="a1" src="./img/canchas/futbol_1.png" alt="">
+
+					<div class="partAv_txt_content">
+						<div class="partConf_tit" >Futbol 5</div>			
+						<div class="partConf_sub">6 confirmados de 10</div>			
+						<div class="partConf_pre">$650</div>	
+					</div>
+				</div>
+				-->
+
+			
+			</div>
+			
+
+		</div>
+
+	</section>
+
+
+
+
+	<button id="btnNewPartido_content">
+		<span class="material-symbols-outlined" id="btnNewPartido_icon">add</span>
+		<div id="btnNewPartido_txt">Crear partido</div>
+	</button>
+
+
+
+
+
+
+
+
+
+
+
 	<!-- Js --	
 	<script type="text/javascript" src="./lib/materialize/materialize.js"></script> 
 -->
@@ -216,3 +437,22 @@
 
 </body>
 </html>
+
+
+
+
+
+<!--
+
+Cancha datos:
+
+Tipo: basquet, tenis, futbol
+suelo: parque, cemento, pasto sintetico, polvo de ladrillo
+Cantidad de jugadores: 
+Precio de alquiler: 
+Lugar:
+
+
+
+
+-->
