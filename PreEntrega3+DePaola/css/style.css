@@ -345,9 +345,9 @@ body::-webkit-scrollbar {
 
 .partAb_tit{
 	font-family: "roboto-400";
-	font-size: 15px;
+	font-size: 14px;
 
-	margin-top: 5px;
+	margin-top: 7px;
 }
 
 
@@ -365,7 +365,7 @@ body::-webkit-scrollbar {
 	font-size: 18px;
 	color: #000000;
 
-	margin-top: 5px;
+	margin-top: 3px;
 }
 
 
@@ -707,6 +707,11 @@ body::-webkit-scrollbar {
 #popUp_perfil_content{
 	position: fixed;
 	z-index: 25;
+	top: 30vh;
+
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 
 	width: 331px;
 	height: 265px;
@@ -722,7 +727,7 @@ body::-webkit-scrollbar {
 
     transition: .1s;
 
-
+    cursor: pointer;
 	display: none;
 }
 
@@ -1270,7 +1275,7 @@ body::-webkit-scrollbar {
 
 
 
-#popUp_tit{
+#popUp_info_tit{
 	margin: 30px 0px 0px 0px;
 
 	font-family: "segoe-ui";

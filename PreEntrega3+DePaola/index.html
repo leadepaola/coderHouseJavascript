@@ -30,113 +30,118 @@
 
 <body>
 
-
-
-
 	<!-- Fondo negro -->
 	<div id="fondo_negro">
-		
-
-		<!-- PopUp Perfil -->
-		<div id="popUp_perfil_content">
-			<img id="popUp_perfil_photo" src="./img/players/manu_ginobilli.jpg" alt="">
-
-			<div id="popUp_tit"><span class="segoe_semiblond">Manu </span>Ginobili</div>
-
-
-			<div id="popUp_quali">
-				4.7
-				<img id="popUp_star" src="./img/star_png.png" alt="">
-			</div>
-
-		</div>	
-
-
-
-		<!-- PopUp Crear partido -->
-		<div id="popUp_newpartido_cont">
-			
-			<img id="popUp_newpart_photo" src="./img/balls/basket_png.png" alt="">
-
-			<div id="popUp_tit">Crear partido</div>
-
-			<select id="select_newpartido">
-				<option value="0">Futbol</option>	
-				<option value="1">Basquet</option>	
-				<option value="2">Tenis</option>	
-				<i></i>
-			</select>
-
-			<input placeholder="Lugar" type="text" id="" class="inputs">
-			<input placeholder="Suelo" type="text" id="" class="inputs">
-			<input placeholder="Cantidad de jugadores" type="number" id="" class="inputs">
-			<input placeholder="$ Valor" type="number" id="" class="inputs">
-
-			<button id="btnCrearPart_content">
-				<div id="btnCrearPart_txt">Crear</div>
-			</button>
-
-		</div>	
-		
-
-
-
-		<!-- PopUp Sumarse a partido -->
-		<div id="popUp_sumarsePart_cont">
-			
-			<img id="popUp_sumarsePart_photo" src="./img/balls/tennis_png.png" alt="">
-	
-			<div id="popUp_sumarsePart_info_cont">
-				<div id="sumarsePart_tit">El Palomar</div>
-
-				<div id="sumarPart_suelo">Polvo de ladrillo</div>
-				<div id="sumarPart_jugadores">3 Jugadores confirmados de 4</div>
-
-				<div id="sumarPart_Precio">$1500</div>
-			</div>
-
-			<button id="btn_sumarsePart_content">
-				<div id="btn_sumarsePart_txt">Sumarse</div>
-			</button>
-
-		</div>	
-
-
-
-		<!-- PopUp Baja a partido -->
-		<div id="popUp_bajaPart_cont">
-			
-			<img id="popUp_bajaPart_photo" src="./img/balls/tennis_png.png" alt="">
-	
-			<div id="popUp_bajaPart_info_cont">
-				<div id="bajaPart_tit">El Palomar</div>
-
-				<div id="bajaPart_suelo">Polvo de ladrillo</div>
-				<div id="bajaPart_jugadores">3 Jugadores confirmados de 4</div>
-
-				<div id="bajaPart_Precio">$1500</div>
-			</div>
-
-			<button id="btn_bajaPart_content">
-				<div id="btn_bajaPart_txt">Darse de baja</div>
-			</button>
-
-		</div>	
-
-
-		<!-- PopUp info -->
-		<div id="popUp_info_content">
-			
-
-			<div id="popUp_tit"><span class="segoe_semiblond">N</span>otificación</div>
-
-			<div id="popUp_info_txt">Te has unido al partido correctamente</div>
-			
-
-		</div>
-
 
 	</div>
+
+	<!-- PopUp Perfil -->
+	<div id="popUp_perfil_content">
+
+		<!-- Se renderiza desde JS => al hacer click sobre jugOn_img_container -->
+
+			<!-- se carca img de estrella para mejor ux -->
+			<img id="popUp_star" src="./img/star_png.png" alt="">
+
+		<!--
+		<img id="popUp_perfil_photo" src="./img/players/manu_ginobilli.jpg" alt="">
+
+		<div id="popUp_tit"><span class="segoe_semiblond">Manu </span>Ginobili</div>
+
+
+		<div id="popUp_quali">
+			4.7
+			<img id="popUp_star" src="./img/star_png.png" alt="">
+		</div>
+		-->
+
+	</div>	
+
+
+
+	<!-- PopUp Crear partido -->
+	<div id="popUp_newpartido_cont">
+		
+		<img id="popUp_newpart_photo" src="./img/balls/basket.png" alt="">
+
+		<div id="popUp_tit">Crear partido</div>
+
+		<select id="select_newpartido">
+			<option value="0">Futbol</option>	
+			<option value="1">Basquet</option>	
+			<option value="2">Tenis</option>	
+			<i></i>
+		</select>
+
+		<input placeholder="Lugar" type="text" id="" class="inputs">
+		<input placeholder="Suelo" type="text" id="" class="inputs">
+		<input placeholder="Cantidad de jugadores" type="number" id="" class="inputs">
+		<input placeholder="$ Valor" type="number" id="" class="inputs">
+
+		<button id="btnCrearPart_content">
+			<div id="btnCrearPart_txt">Crear</div>
+		</button>
+
+	</div>	
+	
+
+
+
+	<!-- PopUp Sumarse a partido -->
+	<div id="popUp_sumarsePart_cont">
+		
+		<img id="popUp_sumarsePart_photo" src="./img/balls/tennis_png.png" alt="">
+
+		<div id="popUp_sumarsePart_info_cont">
+			<div id="sumarsePart_tit">El Palomar</div>
+
+			<div id="sumarPart_suelo">Polvo de ladrillo</div>
+			<div id="sumarPart_jugadores">3 Jugadores confirmados de 4</div>
+
+			<div id="sumarPart_Precio">$1500</div>
+		</div>
+
+		<button id="btn_sumarsePart_content">
+			<div id="btn_sumarsePart_txt">Sumarse</div>
+		</button>
+
+	</div>	
+
+
+
+	<!-- PopUp Baja a partido -->
+	<div id="popUp_bajaPart_cont">
+		
+		<img id="popUp_bajaPart_photo" src="./img/balls/tennis_png.png" alt="">
+
+		<div id="popUp_bajaPart_info_cont">
+			<div id="bajaPart_tit">El Palomar</div>
+
+			<div id="bajaPart_suelo">Polvo de ladrillo</div>
+			<div id="bajaPart_jugadores">3 Jugadores confirmados de 4</div>
+
+			<div id="bajaPart_Precio">$1500</div>
+		</div>
+
+		<button id="btn_bajaPart_content">
+			<div id="btn_bajaPart_txt">Darse de baja</div>
+		</button>
+
+	</div>	
+
+
+	<!-- PopUp info -->
+	<div id="popUp_info_content">
+		
+
+		<div id="popUp_info_tit"><span class="segoe_semiblond">N</span>otificación</div>
+
+		<div id="popUp_info_txt">Te has unido al partido correctamente</div>
+		
+
+	</div>
+
+	
 
 
 	
@@ -167,6 +172,12 @@
 
 			<div id="jugOn_SubContainer">
 
+				<!-- Renderizado desde JS Funcion jugadores_online_alAzar() -->
+
+
+
+
+				<!--
 				<div class="jugOn_img_container">
 					<img class="jugOn_img" src="./img/players/manu_ginobilli.jpg" alt="">					
 				</div>
@@ -226,6 +237,8 @@
 				<div class="jugOn_img_container">
 					<img class="jugOn_img" src="./img/players/oneal.png" alt="">					
 				</div>
+				-->
+
 
 			</div>
 
@@ -256,7 +269,7 @@
 					<img class="partAb_img" data-id="1" id="a1" src="./img/canchas/futbol_1.png" alt="">
 
 					<div class="partAv_txt_content">
-						<div class="partAb_tit" >Futbol 5</div>			
+						<div class="partAb_tit" >Futbol 5 - Villa Bosch</div>			
 						<div class="partAb_sub">6 confirmados de 10</div>			
 						<div class="partAb_pre">$650</div>	
 					</div>
@@ -268,7 +281,7 @@
 					<img class="partAb_img" data-id="2" src="./img/canchas/futbol_2.jpg" alt="">
 					
 					<div class="partAv_txt_content">
-						<div class="partAb_tit" >Futbol 5</div>			
+						<div class="partAb_tit" >Futbol 5 - San Andrés</div>			
 						<div class="partAb_sub">6 confirmados de 10</div>			
 						<div class="partAb_pre">$650</div>	
 					</div>			
@@ -279,7 +292,7 @@
 					<img class="partAb_img" src="./img/canchas/basquet_2.jpg" alt="">
 					
 					<div class="partAv_txt_content">
-						<div class="partAb_tit" >Básquet</div>			
+						<div class="partAb_tit" >Básquet - Devoto</div>			
 						<div class="partAb_sub">3 confirmados de 6</div>			
 						<div class="partAb_pre">$990</div>
 					</div>	
@@ -427,13 +440,10 @@
 
 
 
-	<!-- Js --	
-	<script type="text/javascript" src="./lib/materialize/materialize.js"></script> 
--->
-	<!--
+	<!-- Js -->	
 	<script src="declaraciones.js"></script>
 	<script src="algoritmo.js"></script>
-	-->
+	
 
 </body>
 </html>
