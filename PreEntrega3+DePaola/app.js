@@ -2,15 +2,8 @@
 
 
 
-
-/*
-###### #    # #    #  ####  #  ####  #    # ######  ####  
-#      #    # ##   # #    # # #    # ##   # #      #      
-#####  #    # # #  # #      # #    # # #  # #####   ####  
-#      #    # #  # # #      # #    # #  # # #           # 
-#      #    # #   ## #    # # #    # #   ## #      #    # 
-#       ####  #    #  ####  #  ####  #    # ######  #### 
-*/
+// FUNCIONES
+// -------------------------------------
 
 
 // Devuelve al azar 1 o 0 (uno o cero)
@@ -149,18 +142,10 @@ mostrarInfo_para_sumarsePartido = (e) => {
 
     // Click sobre btn Sumarse 
     //-------------------------------------
-
     const btn_sumarsePart_content   = document.querySelector('#btn_sumarsePart_content')
     btn_sumarsePart_content.addEventListener('click', sumarse_al_partido)
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -173,7 +158,6 @@ mostrarInfo_para_sumarsePartido = (e) => {
 
 const partAb_SubContainer   = document.querySelector('#partAb_SubContainer')
 const partConf_SubContainer = document.querySelector('#partConf_SubContainer')
-
 
 
 const renderizar_partidosAbiertos = () =>{
@@ -346,11 +330,7 @@ const renderizar_partidosConfirmados = () =>{
 
 
 }
-
 renderizar_partidosConfirmados()
-
-
-
 
 
 
@@ -391,30 +371,13 @@ const agregar_partido_a_confirmados = (id) => {
 
 
 
-
-
-
-
-
-
 const jugOn_img_container = document.querySelectorAll('.jugOn_img_container')
-
-
-
-/*
-###### #    # ###### #    # #####  ####   ####  
-#      #    # #      ##   #   #   #    # #      
-#####  #    # #####  # #  #   #   #    #  ####  
-#      #    # #      #  # #   #   #    #      # 
-#       #  #  #      #   ##   #   #    # #    # 
-######   ##   ###### #    #   #    ####   ####
-*/
-
 
 
 
 //Click sobre jugador Online => Muestro popUp con su info
 //-------------------------------------
+
 jugOn_img_container.forEach((card) =>{
 
   card.addEventListener('click', (e) =>{

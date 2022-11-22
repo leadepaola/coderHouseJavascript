@@ -3,24 +3,6 @@
 
 
 
-/*
- ####  #        ##    ####  ######  ####     #   # 
-#    # #       #  #  #      #      #          # #  
-#      #      #    #  ####  #####   ####       #   
-#      #      ######      # #           #      #   
-#    # #      #    # #    # #      #    #      #   
- ####  ###### #    #  ####  ######  ####       # 
-
- ####  #####       # ###### #####  ####   ####  
-#    # #    #      # #        #   #    # #      
-#    # #####       # #####    #   #    #  ####  
-#    # #    #      # #        #   #    #      # 
-#    # #    # #    # #        #   #    # #    # 
- ####  #####   ####  ######   #    ####   ####
-
-*/
-
-
 // Clase cancha
 class Cancha {
     constructor(id, tipo, suelo, lugar, userConfirmado, cantidadJugadoresConfirmados, cantidadJugadores, precio, img){
@@ -90,17 +72,12 @@ const jugador20  = new Jugador (20, 'Luis','Scola','Luifa', '4.6',              
 
 
 
-/*
-  ##   #####  #####    ##   #   #  ####  
- #  #  #    # #    #  #  #   # #  #      
-#    # #    # #    # #    #   #    ####  
-###### #####  #####  ######   #        # 
-#    # #   #  #   #  #    #   #   #    # 
-#    # #    # #    # #    #   #    ####  
-*/
+
 
 
 //Arrays de bases
+/*-------------------------------------*/
+
 let partidos
 
 
@@ -144,10 +121,10 @@ const popUp_info_txt          = document.querySelector('#popUp_info_txt')
 
 
 // Jugadores Online
-const jugOn_SubContainer = document.querySelector('#jugOn_SubContainer')
+const jugOn_SubContainer    = document.querySelector('#jugOn_SubContainer')
 
 // Baja
-const popUp_bajaPart_cont          = document.querySelector('#popUp_bajaPart_cont')
+const popUp_bajaPart_cont   = document.querySelector('#popUp_bajaPart_cont')
 
 
 

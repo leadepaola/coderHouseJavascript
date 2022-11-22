@@ -9,57 +9,33 @@
 
 	<!-- 	fonts 						-->
 	<link rel="stylesheet" href="./css/fonts.css?2021_8_20_2231">
-
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<!--
-	<link rel="stylesheet" href="./lib/materialize/materialize.css?2021_8_20_2231">
--->
 
 	<!-- css -->
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	
 	<link rel="stylesheet" href="./css/style.css?2021_8_20_2231">
-
-
-
-
-
-
-
 </head>
 
 <body>
 
 	<!-- Fondo negro -->
-	<div id="fondo_negro">
+	<div id="fondo_negro"></div>
 
-	</div>
 
 	<!-- PopUp Perfil -->
 	<div id="popUp_perfil_content">
-
 		<!-- Se renderiza desde JS => al hacer click sobre jugOn_img_container -->
 
 			<!-- se carca img de estrella para mejor ux -->
 			<img id="popUp_star" src="./img/star_png.png" alt="">
-
-		<!--
-		<img id="popUp_perfil_photo" src="./img/players/manu_ginobilli.jpg" alt="">
-
-		<div id="popUp_tit"><span class="segoe_semiblond">Manu </span>Ginobili</div>
-
-
-		<div id="popUp_quali">
-			4.7
-			<img id="popUp_star" src="./img/star_png.png" alt="">
-		</div>
-		-->
-
 	</div>	
 
 
 
-	<!-- PopUp Crear partido -->
+
+
+	<!-- PopUp Crear partido - PARA ENTREGA FINAL --
 	<div id="popUp_newpartido_cont">
 		
 		<img id="popUp_newpart_photo" src="./img/balls/basket.png" alt="">
@@ -83,66 +59,29 @@
 		</button>
 
 	</div>	
-	
+	-->
 
 
 
 	<!-- PopUp Sumarse a partido -->
 	<div id="popUp_sumarsePart_cont">
-		<!--
-		<img id="popUp_sumarsePart_photo" src="./img/balls/tennis.png" style="width: 185px" alt="">
-
-		<div id="popUp_sumarsePart_info_cont">
-			<div id="sumarsePart_tit">El Palomar</div>
-
-			<div id="sumarPart_suelo">Polvo de ladrillo</div>
-			<div id="sumarPart_jugadores">3 Jugadores confirmados de 4</div>
-
-			<div id="sumarPart_Precio">$1500</div>
-		</div>
-
-		<button id="btn_sumarsePart_content" data-id="0" >
-			<div id="btn_sumarsePart_txt">Sumarse</div>
-		</button>
-		-->
+		<!-- Renderizado desde JS -->
 	</div>	
 
 
 
 	<!-- PopUp Baja a partido -->
 	<div id="popUp_bajaPart_cont">
-		<!--
-		<img id="popUp_bajaPart_photo" src="./img/balls/tennis.png" alt="">
-
-		<div id="popUp_bajaPart_info_cont">
-			<div id="bajaPart_tit">El Palomar</div>
-
-			<div id="bajaPart_suelo">Polvo de ladrillo</div>
-			<div id="bajaPart_jugadores">3 Jugadores confirmados de 4</div>
-
-			<div id="bajaPart_Precio">$1500</div>
-		</div>
-
-		<button id="btn_bajaPart_content">
-			<div id="btn_bajaPart_txt">Darse de baja</div>
-		</button>
-		-->
+		<!-- Renderizado desde JS -->
 	</div>	
 
 
 	<!-- PopUp info -->
 	<div id="popUp_info_content">
-		
-
 		<div id="popUp_info_tit"><span class="segoe_semiblond">N</span>otificación</div>
 
-		<div id="popUp_info_txt">Te has unido al partido correctamente</div>
-		
-
+		<div id="popUp_info_txt"></div>
 	</div>
-
-	
-
 
 	
 
@@ -156,7 +95,6 @@
 	<section id="section_logo" >
 		<img id="img_logo" src="./img/logo.png" alt="">
 	</section>
-
 
 
 
@@ -184,16 +122,12 @@
 
 
 
-
-
 	<!-- Partidos abiertos -->
 	<section class="section_gral" >
 
 		<div class="section_titulo">
 			<span class="segoe_semiblond">Partidos abiertos </span>buscando jugadores
 		</div>
-
-
 
 		<div id="partAb_container" >
 
@@ -204,11 +138,6 @@
 			</div>
 
 		</div>
-
-
-
-
-
 
 	</section>
 
@@ -232,10 +161,10 @@
 			
 			</div>
 			
-
 		</div>
 
 	</section>
+
 
 
 
@@ -249,12 +178,6 @@
 
 
 
-
-
-
-
-
-
 	<!-- Js -->	
 	<script src="declaraciones.js"></script>
 	<script src="app.js"></script>
@@ -264,20 +187,3 @@
 </html>
 
 
-
-
-
-<!--
-
-Cancha datos:
-
-Tipo: basquet, tenis, futbol
-suelo: parque, cemento, pasto sintetico, polvo de ladrillo
-Cantidad de jugadores: 
-Precio de alquiler: 
-Lugar:
-
-
-
-
--->
