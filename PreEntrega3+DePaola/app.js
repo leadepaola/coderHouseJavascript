@@ -425,7 +425,7 @@ jugOn_img_container.forEach((card) =>{
 
 
 
-mostrar_popUp_info = (text) =>{
+const mostrar_popUp_info = (text) =>{
     popUp_info_content.style.display = 'block'
     popUp_info_txt.innerHTML = text
 }
