@@ -74,7 +74,7 @@ const jugador9  = new Jugador (9, 'Cristiano','Ronaldo','el bicho', '5.0',      
 const jugador10  = new Jugador (10, 'Erling','Haaland','el androide', '4.7',      './img/players/haaland.jpeg');
 
 const jugador11  = new Jugador (11, 'Rafael','Nadal','Rafa', '5.0',                 './img/players/rafa_nadal.png');
-const jugador12  = new Jugador (12, 'Juan Martín','del Potro','la torre', '4.7',  './img/players/delpotro.png');
+const jugador12  = new Jugador (12, 'Juan Martín','del Potro','la torre', '4.7',  './img/players/delpotro.jpg');
 const jugador13  = new Jugador (13, 'Serena','Williams','Slam', '4.4',            './img/players/serena_williams.jpg');
 const jugador14  = new Jugador (14, 'María','Sharápova','Masha Queen', '4.2',     './img/players/sharapova.png');
 
@@ -83,7 +83,7 @@ const jugador16  = new Jugador (16, 'Shaquille',"O'Neal",'Big Cactus', '4.7',   
 const jugador17  = new Jugador (17, 'Manu','Ginóbili','Manu', '4.7',              './img/players/manu_ginobilli.jpg');
 const jugador18  = new Jugador (18, 'LeBron','James','King', '4.9',               './img/players/lebron.jpg');
 const jugador19  = new Jugador (19, 'Stephen','Curry','Steph', '4.8',             './img/players/curry.png');
-const jugador20  = new Jugador (20, 'Luis','Scola','Luifa', '4.6',                './img/players/scola.png');
+const jugador20  = new Jugador (20, 'Luis','Scola','Luifa', '4.6',                './img/players/scola.jpg');
 
 
 
