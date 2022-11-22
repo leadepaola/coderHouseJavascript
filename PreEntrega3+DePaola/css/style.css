@@ -625,6 +625,8 @@ body::-webkit-scrollbar {
     box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);
 
     transition: .1s;
+
+    display: none;
 }
 
 #btnNewPartido_content:hover{
@@ -718,7 +720,7 @@ body::-webkit-scrollbar {
 
 	border-radius: 10px;
 
-	background-color: #ffffff7d;	
+	background-color: #ffffff8a;	
 
 	text-align: center;
 	
@@ -732,8 +734,8 @@ body::-webkit-scrollbar {
 }
 
 #popUp_perfil_content:hover{
-	translate: 0px -5px;
-	background-color: #ffffff8f;
+	/*translate: 0px -5px;*/
+	background-color: #ffffff9e;
 }
 
 
@@ -947,6 +949,14 @@ body::-webkit-scrollbar {
 	position: fixed;
 	z-index: 25;
 
+	top: 14vh;
+
+
+
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
 	width: 331px;
 	/*height: 265px;*/
 
@@ -964,6 +974,7 @@ body::-webkit-scrollbar {
 
     background-image: url("../img/canchas/tenis_1.jpg");
 	background-position: center;
+	background-size: cover;
 
 	display: none;
 }
@@ -1098,6 +1109,12 @@ body::-webkit-scrollbar {
 	position: fixed;
 	z-index: 25;
 
+	top: 14vh;
+
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
 	width: 331px;
 	/*height: 265px;*/
 
@@ -1115,6 +1132,7 @@ body::-webkit-scrollbar {
 
     background-image: url("../img/canchas/tenis_1.jpg");
 	background-position: center;
+    background-size: cover;
 
 	display: none;
 
@@ -1249,6 +1267,12 @@ body::-webkit-scrollbar {
 	position: fixed;
 	z-index: 25;
 
+	top: 30vh;
+
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
 	width: 395px;
 
 	border-radius: 10px;
@@ -1268,7 +1292,7 @@ body::-webkit-scrollbar {
 }
 
 #popUp_info_content:hover{
-	translate: 0px -5px;
+	/*translate: 0px -5px;*/
 	background-color: #ffffffc9;
 }
 

@@ -23,7 +23,8 @@
 
 // Clase cancha
 class Cancha {
-    constructor(tipo, suelo, lugar, userConfirmado, cantidadJugadoresConfirmados, cantidadJugadores, precio, img){
+    constructor(id, tipo, suelo, lugar, userConfirmado, cantidadJugadoresConfirmados, cantidadJugadores, precio, img){
+      this.id                             = id;
       this.tipo                           = tipo;
       this.suelo                          = suelo;
       this.lugar                          = lugar;
@@ -35,14 +36,14 @@ class Cancha {
     }
 }
 
-const canchaFutbol1 = new Cancha ('Fútbol',   'Pasto sintético', 'Villa Bosch',      0, 6, 10, 650, './img/canchas/futbol_1.png');
-const canchaFutbol2 = new Cancha ('Fútbol',   'Pasto sintético', 'San Andrés',       0, 4, 10, 650, './img/canchas/futbol_2.jpg');
+const canchaFutbol1 = new Cancha (1, 'Fútbol',   'Pasto sintético', 'Villa Bosch',      0, 6, 10, 650, './img/canchas/futbol_1.png');
+const canchaFutbol2 = new Cancha (2, 'Fútbol',   'Pasto sintético', 'San Andrés',       0, 4, 10, 650, './img/canchas/futbol_2.jpg');
 
-const canchaBasquet1 = new Cancha ('Básquet', 'Parqué',          'Devoto',           0, 3,  6, 990, './img/canchas/basquet_1.jpg');
-const canchaBasquet2 = new Cancha ('Básquet', 'Cemento',         'Pilar',            0, 5, 10, 800, './img/canchas/basquet_2.jpg');
+const canchaBasquet1 = new Cancha (3, 'Básquet', 'Cemento',          'Devoto',           0, 3,  6, 990, './img/canchas/basquet_1.jpg');
+const canchaBasquet2 = new Cancha (4, 'Básquet', 'Cemento',         'Pilar',            0, 5, 10, 800, './img/canchas/basquet_2.jpg');
 
-const canchaTenis1 = new Cancha ('Tenis',     'Polvo de ladrillo', 'El Palomar',     0, 1, 2, 1500, './img/canchas/tenis_1.jpg');
-const canchaTenis2 = new Cancha ('Tenis',     'Polvo de ladrillo', 'Ciudad Jardín',  0, 3, 4, 1200, './img/canchas/tenis_2.jpg');
+const canchaTenis1 = new Cancha (5, 'Tenis',     'Polvo de ladrillo', 'El Palomar',     0, 1, 2, 1500, './img/canchas/tenis_1.jpg');
+const canchaTenis2 = new Cancha (6, 'Tenis',     'Polvo de ladrillo', 'Ciudad Jardín',  0, 3, 4, 1200, './img/canchas/tenis_2.jpg');
 
 
 
@@ -100,7 +101,24 @@ const jugador20  = new Jugador (20, 'Luis','Scola','Luifa', '4.6',              
 
 
 //Arrays de bases
-const partidosAbiertos = [ canchaFutbol1, canchaFutbol2, canchaBasquet1, canchaBasquet2, canchaTenis1, canchaTenis2];
+let partidos
+
+
+// Verifico si hay informacion en storage para partidos abiertos
+if(localStorage.getItem('partidos')){
+  partidos = JSON.parse(localStorage.getItem('partidos'))
+}else{
+  partidos = [ canchaFutbol1, canchaFutbol2, canchaBasquet1, canchaBasquet2, canchaTenis1, canchaTenis2]; 
+}
+
+// Verifico si hay informacion en storage para partidos confirmados
+if(localStorage.getItem('partidosConfirmados')){
+  partidosConfirmados = JSON.parse(localStorage.getItem('partidosConfirmados'))
+}else{
+  partidosConfirmados = [ ]; 
+}
+
+
 
 const jugadores = [
   jugador1, jugador2, jugador3, jugador4, jugador5, jugador6, jugador7, jugador8, jugador9, jugador10, jugador11, jugador12, jugador13, jugador14, jugador15, jugador16, jugador17, jugador18, jugador19, jugador20
@@ -114,19 +132,24 @@ const jugadoresOnline = [
 
 
 // VARIABLES
+//-------------------------------------
+
+// POP UP
+const fondo_negro             = document.querySelector('#fondo_negro')
+const popUp_perfil_content    = document.querySelector('#popUp_perfil_content')
+const popUp_sumarsePart_cont  = document.querySelector('#popUp_sumarsePart_cont')
+const popUp_info_content      = document.querySelector('#popUp_info_content')
+const popUp_info_txt          = document.querySelector('#popUp_info_txt')
 
 
 
-//let jugadoresOnline = jugadores;
-
-
-
-    // POP UP
-    const fondo_negro           = document.querySelector('#fondo_negro')
-    const popUp_perfil_content  = document.querySelector('#popUp_perfil_content')
-
-
+// Jugadores Online
 const jugOn_SubContainer = document.querySelector('#jugOn_SubContainer')
+
+// Baja
+const popUp_bajaPart_cont          = document.querySelector('#popUp_bajaPart_cont')
+
+
 
 
 /*
@@ -140,13 +163,15 @@ const jugOn_SubContainer = document.querySelector('#jugOn_SubContainer')
 
 
 // Devuelve al azar 1 o 0 (uno o cero)
+//-------------------------------------
 const azar_online_offline = () => {
     return Math.round(Math.random() * (1 + 0-0) + 0);
 }
 
 
 
-//Selecciono jugadores al azar que se encuentran Online
+// Selecciono jugadores al azar que se encuentran Online
+//-------------------------------------
 const jugadores_online_alAzar = (array) => {
 
     // Reordena array
@@ -179,6 +204,194 @@ jugadores_online_alAzar(jugadoresOnline);
 
 
 
+// Imprimir partidos abiertos
+//-------------------------------------
+
+const partAb_SubContainer   = document.querySelector('#partAb_SubContainer')
+const partConf_SubContainer = document.querySelector('#partConf_SubContainer')
+
+
+
+const imprimir_partidosAbiertos = () =>{
+
+  partidos.forEach((cancha) => {
+
+    const partAb = document.createElement('div')
+    partAb.classList.add('partAb_img_container')
+    partAb.setAttribute('data-id',cancha.id)
+
+    //<img class="partAb_img" data-id="${cancha.id}" src="${cancha.img}" alt="${cancha.tipo}">
+    if (cancha.cantidadJugadoresConfirmados != cancha.cantidadJugadores && cancha.userConfirmado==0) {
+        partAb.innerHTML = `
+            <img class="partAb_img" src="${cancha.img}" alt="${cancha.tipo}">
+
+            <div class="partAv_txt_content">
+              <div class="partAb_tit" >${cancha.tipo} - ${cancha.lugar}</div>     
+              <div class="partAb_sub">${cancha.cantidadJugadoresConfirmados} confirmados de ${cancha.cantidadJugadores}</div>     
+              <div class="partAb_pre">$${cancha.precio}</div>  
+            </div>
+          `
+        partAb_SubContainer.append(partAb)
+    }  
+
+  })
+}
+
+imprimir_partidosAbiertos()
+
+
+
+
+
+
+const mostrarInfoPartidoConfirmado = (e) => {
+  
+    // Tomo el id del jugador al que se le hizo click
+    const id_partConfirmado = e.target.closest('.partConf_img_container').getAttribute('data-id')
+   
+
+    partidosConfirmados.forEach((cancha) => {
+
+      if (cancha.id == id_partConfirmado) {
+
+          //const bajaPart = document.createElement('div')
+          //bajaPart.classList.add('popUp_bajaPart_cont')
+
+          let imgLogo = ''
+
+          switch(cancha.tipo){
+            case 'Fútbol':
+                imgLogo='./img/balls/football.png'
+            break;
+            case 'Básquet':
+                imgLogo='./img/balls/basket.png'
+
+            break;
+            case 'Tenis':
+                imgLogo='./img/balls/tennis.png'
+            break;
+          }
+
+
+          popUp_bajaPart_cont.innerHTML = `
+              <img id="popUp_bajaPart_photo" src="${imgLogo}" alt="${cancha.tipo}">
+
+              <div id="popUp_bajaPart_info_cont">
+                  <div id="bajaPart_tit">${cancha.lugar}</div>
+
+                  <div id="bajaPart_suelo">${cancha.suelo}</div>
+                  <div id="bajaPart_jugadores">${cancha.cantidadJugadoresConfirmados} Jugadores confirmados de ${cancha.cantidadJugadores}</div>
+
+                  <div id="bajaPart_Precio">$${cancha.precio}</div>
+              </div>
+
+              <button id="btn_bajaPart_content" data-id="${cancha.id}">
+                  <div id="btn_bajaPart_txt">Darse de baja</div>
+              </button>
+          `
+          popUp_bajaPart_cont.style.backgroundImage = `url("${cancha.img}")`
+
+          mostrar_popUp_bajaPart()
+      }
+
+        
+
+  })
+} 
+
+
+
+
+
+const renderizar_partidosConfirmados = () =>{
+
+  partConf_SubContainer.innerHTML = ''
+
+  partidosConfirmados.forEach((cancha) => {
+
+    const partConf = document.createElement('div')
+    partConf.classList.add('partConf_img_container')
+    partConf.setAttribute('data-id',cancha.id)
+       
+    partConf.innerHTML = `
+        <img class="partConf_img" src="${cancha.img}" alt="${cancha.tipo}">
+
+        <div class="partConf_txt_content">
+          <div class="partConf_tit" >${cancha.tipo}</div>      
+          <div class="partConf_sub">${cancha.lugar}</div>      
+          <div class="partConf_pre">$${cancha.precio}</div> 
+        </div>
+    `
+    partConf_SubContainer.append(partConf)
+
+  })
+
+  // Creo query selector 
+  const partConf_img_container = document.querySelectorAll('.partConf_img_container')
+  partConf_img_container.forEach((card) =>{
+      card.addEventListener('click', mostrarInfoPartidoConfirmado)
+  })
+}
+
+renderizar_partidosConfirmados()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const agregar_partido_a_confirmados = (id) => {
+
+    const partConf = document.createElement('div')
+    partConf.classList.add('partConf_img_container')
+    
+
+    partidosConfirmados.forEach((cancha) => {
+        if(cancha.id==id){
+            partConf.setAttribute('data-id',cancha.id)
+            partConf.innerHTML = `
+                <img class="partConf_img" src="${cancha.img}" alt="${cancha.tipo}">
+
+                <div class="partConf_txt_content">
+                  <div class="partConf_tit" >${cancha.tipo}</div>      
+                  <div class="partConf_sub">${cancha.lugar}</div>      
+                  <div class="partConf_pre">$${cancha.precio}</div> 
+                </div>
+            `
+            partConf_SubContainer.append(partConf)
+
+        }
+    })
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 const jugOn_img_container = document.querySelectorAll('.jugOn_img_container')
@@ -198,9 +411,10 @@ const jugOn_img_container = document.querySelectorAll('.jugOn_img_container')
 
 
 //Click sobre jugador Online => Muestro popUp con su info
-jugOn_img_container.forEach((action) =>{
+//-------------------------------------
+jugOn_img_container.forEach((card) =>{
 
-  action.addEventListener('click', (e) =>{
+  card.addEventListener('click', (e) =>{
 
     // Tomo el id del jugador al que se le hizo click
     const id_jugador = e.target.getAttribute('data-id')
@@ -232,11 +446,156 @@ jugOn_img_container.forEach((action) =>{
 
 
 
+
+
+
+
+
+
+
+
+// Click sobre Partido abierto => muesta popUp para sumarse al partido
+//-------------------------------------
+
+const popUp_sumarsePart_photo   = document.querySelector('#popUp_sumarsePart_photo')
+const partAb_img_container      = document.querySelectorAll('.partAb_img_container')
+
+partAb_img_container.forEach((card) =>{
+
+    card.addEventListener('click', (e) =>{
+
+    // Tomo el id del jugador al que se le hizo click
+    const id_cancha = e.target.closest('.partAb_img_container').getAttribute('data-id')
+
+    partidos.forEach((cancha) =>{
+
+      if(cancha.id == id_cancha){
+
+          let imgLogo = ''
+
+          switch(cancha.tipo){
+            case 'Fútbol':
+                imgLogo='./img/balls/football.png'
+            break;
+            case 'Básquet':
+                imgLogo='./img/balls/basket.png'
+
+            break;
+            case 'Tenis':
+                imgLogo='./img/balls/tennis.png'
+            break;
+          }
+
+          popUp_sumarsePart_cont.innerHTML= `
+              <img id="popUp_sumarsePart_photo" src="${imgLogo}" alt="">
+
+              <div id="popUp_sumarsePart_info_cont">
+                <div id="sumarsePart_tit">${cancha.lugar}</div>
+
+                <div id="sumarPart_suelo">${cancha.suelo}</div>
+                <div id="sumarPart_jugadores">${cancha.cantidadJugadoresConfirmados} Jugadores confirmados de ${cancha.cantidadJugadores}</div>
+
+                <div id="sumarPart_Precio">$${cancha.precio}</div>
+              </div>
+
+              <button id="btn_sumarsePart_content" data-id="${cancha.id}">
+                <div id="btn_sumarsePart_txt">Sumarse</div>
+              </button>
+
+              `
+          popUp_sumarsePart_cont.style.backgroundImage = `url("${cancha.img}")`
+
+      }
+
+    })
+
+    // Css
+    fondo_negro.style.display = 'flex'
+    popUp_sumarsePart_cont.style.display = 'block'
+    
+    
+
+
+    // Click sobre btn Sumarse 
+    //-------------------------------------
+
+    const btn_sumarsePart_content   = document.querySelector('#btn_sumarsePart_content')
+
+    btn_sumarsePart_content.addEventListener('click', (e) =>{
+
+        // Saco card de partidos abiertos para mostrarla, luego, en confirmados
+        card.style.display = 'none'
+
+        // Tomo el id del partido seleccionado
+        const partido_select_id = e.target.closest('#btn_sumarsePart_content').getAttribute('data-id')
+        
+        partidos.forEach((partido) =>{
+            if (partido.id == partido_select_id) {
+                partido.userConfirmado = 1;
+                partido.cantidadJugadoresConfirmados++
+
+                partidosConfirmados.push(partido)
+
+            }
+        })
+        
+
+
+        // Guardo Modificacion en storage
+        localStorage.setItem('partidos',JSON.stringify(partidos))
+        localStorage.setItem('partidosConfirmados',JSON.stringify(partidosConfirmados))
+
+
+        // Css - 
+        popUp_sumarsePart_cont.style.display = 'none'
+        popUp_info_content.style.display = 'block'
+        popUp_info_txt.innerHTML = 'Te has sumado al partido correctamente'
+
+
+        // Imprimo partido en la seccion de confirmados
+        //agregar_partido_a_confirmados(partido_select_id);
+        renderizar_partidosConfirmados();
+
+    })
+
+
+
+
+
+
+  })
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+const mostrar_popUp_bajaPart = () =>{
+    fondo_negro.style.display = 'flex'
+    popUp_bajaPart_cont.style.display = 'block'
+}
+
+
+
+
+
 // Click sobre fondo negro
 fondo_negro.addEventListener('click', () =>{
 
   fondo_negro.style.display = 'none'
   popUp_perfil_content.style.display = 'none'
+  popUp_sumarsePart_cont.style.display = 'none'
+  popUp_info_content.style.display = 'none'
+  popUp_bajaPart_cont.style.display = 'none'
+
 })
 
 
@@ -245,4 +604,12 @@ popUp_perfil_content.addEventListener('click', () =>{
 
   fondo_negro.style.display = 'none'
   popUp_perfil_content.style.display = 'none'
+})
+
+
+// Click sobre pop ap info
+popUp_info_content.addEventListener('click', () =>{
+
+  fondo_negro.style.display = 'none'
+  popUp_info_content.style.display = 'none'
 })
