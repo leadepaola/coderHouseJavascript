@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "nombre": "Kylian",
+        "apellido": "Mbappé",
+        "apodo": "Kyli",
+        "estrellas": "4.7",
+        "img": "./img/players/kylian.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Lionel",
+        "apellido": "Messi",
+        "apodo": "la pulga",
+        "estrellas": "5.0",
+        "img": "./img/players/messi.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Ángel",
+        "apellido": "Di María",
+        "apodo": "Fideo",
+        "estrellas": "4.6",
+        "img": "./img/players/di_maria.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Karim",
+        "apellido": "Benzema",
+        "apodo": "el gato",
+        "estrellas": "5.0",
+        "img": "./img/players/benzema.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Gerard",
+        "apellido": "Pique",
+        "apodo": "Geri",
+        "estrellas": "3.8",
+        "img": "./img/players/pique.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Rodrigo",
+        "apellido": "De Paul",
+        "apodo": "Pollo",
+        "estrellas": "4.5",
+        "img": "./img/players/de_paul.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Alejandro",
+        "apellido": "Gómez",
+        "apodo": "el papu",
+        "estrellas": "4.1",
+        "img": "./img/players/papu_gomez.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Damián",
+        "apellido": "Martínez",
+        "apodo": "el dibu",
+        "estrellas": "4.0",
+        "img": "./img/players/dibu_martinez.png"
+    },
+    {
+        "id": 9,
+        "nombre": "Cristiano",
+        "apellido": "Ronaldo",
+        "apodo": "el bicho",
+        "estrellas": "5.0",
+        "img": "./img/players/cristiano.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Erling",
+        "apellido": "Haaland",
+        "apodo": "el androide",
+        "estrellas": "4.7",
+        "img": "./img/players/haaland.jpeg"
+    },
+    {
+        "id": 11,
+        "nombre": "Rafael",
+        "apellido": "Nadal",
+        "apodo": "Rafa",
+        "estrellas": "5.0",
+        "img": "./img/players/rafa_nadal.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Juan Martín",
+        "apellido": "del Potro",
+        "apodo": "la torre",
+        "estrellas": "4.7",
+        "img": "./img/players/delpotro.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Serena",
+        "apellido": "Williams",
+        "apodo": "Slam",
+        "estrellas": "4.4",
+        "img": "./img/players/serena_williams.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "María",
+        "apellido": "Sharápova",
+        "apodo": "Masha Queen",
+        "estrellas": "4.2",
+        "img": "./img/players/sharapova.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Michael",
+        "apellido": "Jordan",
+        "apodo": "Black Jesus",
+        "estrellas": "5.0",
+        "img": "./img/players/jordan.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Shaquille",
+        "apellido": "O'Neal",
+        "apodo": "Big Cactus",
+        "estrellas": "4.7",
+        "img": "./img/players/oneal.png"
+    },
+    {
+        "id": 17,
+        "nombre": "Manu",
+        "apellido": "Ginóbili",
+        "apodo": "Manu",
+        "estrellas": "4.7",
+        "img": "./img/players/manu_ginobilli.jpg"
+    },
+    {
+        "id": 18,
+        "nombre": "LeBron",
+        "apellido": "James",
+        "apodo": "King",
+        "estrellas": "4.9",
+        "img": "./img/players/lebron.jpg"
+    },
+    {
+        "id": 19,
+        "nombre": "Stephen",
+        "apellido": "Curry",
+        "apodo": "Steph",
+        "estrellas": "4.8",
+        "img": "./img/players/curry.png"
+    },
+    {
+        "id": 20,
+        "nombre": "Luis",
+        "apellido": "Scola",
+        "apodo": "Luifa",
+        "estrellas": "4.6",
+        "img": "./img/players/scola.jpg"
+    }
+]

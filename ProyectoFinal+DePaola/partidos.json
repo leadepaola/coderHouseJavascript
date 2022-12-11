@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "tipo": "Fútbol",
+        "suelo": "Pasto sintético",
+        "lugar": "Villa Bosch",
+        "userConfirmado": 0,
+        "cantidadJugadoresConfirmados": 6,
+        "cantidadJugadores": 10,
+        "precio": 650,
+        "img": "./img/canchas/futbol_1.png"
+    },
+    {
+        "id": 2,
+        "tipo": "Fútbol",
+        "suelo": "Pasto sintético",
+        "lugar": "San Andrés",
+        "userConfirmado": 0,
+        "cantidadJugadoresConfirmados": 4,
+        "cantidadJugadores": 10,
+        "precio": 650,
+        "img": "./img/canchas/futbol_2.jpg"
+    },
+    {
+        "id": 3,
+        "tipo": "Básquet",
+        "suelo": "Cemento",
+        "lugar": "Devoto",
+        "userConfirmado": 0,
+        "cantidadJugadoresConfirmados": 3,
+        "cantidadJugadores": 6,
+        "precio": 990,
+        "img": "./img/canchas/basquet_1.jpg"
+    },
+    {
+        "id": 4,
+        "tipo": "Básquet",
+        "suelo": "Cemento",
+        "lugar": "Pilar",
+        "userConfirmado": 0,
+        "cantidadJugadoresConfirmados": 5,
+        "cantidadJugadores": 10,
+        "precio": 800,
+        "img": "./img/canchas/basquet_2.jpg"
+    },
+    {
+        "id": 5,
+        "tipo": "Tenis",
+        "suelo": "Polvo de ladrillo",
+        "lugar": "El Palomar",
+        "userConfirmado": 0,
+        "cantidadJugadoresConfirmados": 1,
+        "cantidadJugadores": 2,
+        "precio": 1500,
+        "img": "./img/canchas/tenis_1.jpg"
+    },
+    {
+        "id": 6,
+        "tipo": "Tenis",
+        "suelo": "Polvo de ladrillo",
+        "lugar": "Ciudad Jardín",
+        "userConfirmado": 0,
+        "cantidadJugadoresConfirmados": 3,
+        "cantidadJugadores": 4,
+        "precio": 1200,
+        "img": "./img/canchas/tenis_2.jpg"
+    }
+]

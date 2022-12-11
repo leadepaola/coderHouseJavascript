@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ProyectoFinal - De Paola </title>
+
+
+	<!-- 	fonts 						-->
+	<link rel="stylesheet" href="./css/fonts.css?2021_8_20_2231">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+	<!-- css -->
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="./css/style.css?2021_8_20_2231">
+</head>
+
+<body>
+
+	<!-- Fondo negro -->
+	<div id="fondo_negro"></div>
+
+
+	<!-- PopUp Perfil -->
+	<div id="popUp_perfil_content">
+		<!-- Se renderiza desde JS => al hacer click sobre jugOn_img_container -->
+
+			<!-- se carca img de estrella para mejor ux -->
+			<img id="popUp_star" src="./img/star_png.png" alt="">
+	</div>	
+
+
+
+
+
+	<!-- PopUp Crear partido - PARA ENTREGA FINAL --
+	<div id="popUp_newpartido_cont">
+		
+		<img id="popUp_newpart_photo" src="./img/balls/basket.png" alt="">
+
+		<div id="popUp_tit">Crear partido</div>
+
+		<select id="select_newpartido">
+			<option value="0">Futbol</option>	
+			<option value="1">Basquet</option>	
+			<option value="2">Tenis</option>	
+			<i></i>
+		</select>
+
+		<input placeholder="Lugar" type="text" id="" class="inputs">
+		<input placeholder="Suelo" type="text" id="" class="inputs">
+		<input placeholder="Cantidad de jugadores" type="number" id="" class="inputs">
+		<input placeholder="$ Valor" type="number" id="" class="inputs">
+
+		<button id="btnCrearPart_content">
+			<div id="btnCrearPart_txt">Crear</div>
+		</button>
+
+	</div>	
+	-->
+
+
+
+	<!-- PopUp Sumarse a partido -->
+	<div id="popUp_sumarsePart_cont">
+		<!-- Renderizado desde JS -->
+	</div>	
+
+
+
+	<!-- PopUp Baja a partido -->
+	<div id="popUp_bajaPart_cont">
+		<!-- Renderizado desde JS -->
+	</div>	
+
+
+	<!-- PopUp info -->
+	<div id="popUp_info_content">
+		<div id="popUp_info_tit"><span class="segoe_semiblond">N</span>otificación</div>
+
+		<div id="popUp_info_txt"></div>
+	</div>
+
+	
+
+
+	<!-- Banner -->
+	<section id=cointainer_banner>
+		<img id="img_banner" src="./img/banner.jpg" alt="">
+	</section>
+
+	<!-- Logo -->
+	<section id="section_logo" >
+		<img id="img_logo" src="./img/logo.png" alt="">
+	</section>
+
+
+
+
+	<!-- Jugadores Online -->
+	<section class="section_gral" id="section_jugOn">
+
+		<div class="section_titulo" id="jug_on_tit">
+			<span class="segoe_semiblond">Jugadores </span>Online
+		</div>
+
+		<div id="jugOn_container" >
+
+			<div id="jugOn_SubContainer">
+
+				<!-- Renderizado desde JS Funcion jugadores_online_alAzar() -->
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+
+	<!-- Partidos abiertos -->
+	<section class="section_gral" >
+
+		<div class="section_titulo">
+			<span class="segoe_semiblond">Partidos abiertos </span>buscando jugadores
+		</div>
+
+		<div id="partAb_container" >
+
+			<div id="partAb_SubContainer" >
+
+				<!-- Renderizado desde JS => Funcion imprimir_partidosAbiertos()  -->
+				
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+
+
+	<!-- Partidos Confirmados -->
+	<section class="section_gral" id="section_partConf">
+
+		<div class="section_titulo">
+			<span class="segoe_semiblond">Tus Partidos</span> confirmados
+		</div>
+
+		<div id="partConf_container" >
+
+			<div id="partConf_SubContainer" >
+
+				<!-- Reberizado desde JS  -->
+			
+			</div>
+			
+		</div>
+
+	</section>
+
+
+
+
+	<!-- Para entrega final
+	<button id="btnNewPartido_content">
+		<span class="material-symbols-outlined" id="btnNewPartido_icon">add</span>
+		<div id="btnNewPartido_txt">Crear partido</div>
+	</button>
+	-->
+
+
+
+
+	<!-- Js -->	
+	<script src="declaraciones.js"></script>
+	<script src="app.js"></script>
+	
+
+</body>
+</html>
+
+

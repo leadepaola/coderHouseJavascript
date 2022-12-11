@@ -1,0 +1,76 @@
+
+/*Roboto Google Font*/
+
+@font-face {
+	font-family: "roboto-100";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-Thin.ttf");
+}
+
+@font-face {
+	font-family: "roboto-300";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: "roboto-300i";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-LightItalic.ttf");
+}
+
+@font-face {
+	font-family: "roboto-400";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: "roboto-400i";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-Italic.ttf");
+}
+
+@font-face {
+	font-family: "roboto-500";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-Medium.ttf");
+}
+
+@font-face {
+	font-family: "roboto-500i";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-MediumItalic.ttf");
+}
+
+@font-face {
+	font-family: "roboto-700";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "roboto-700i";
+	src: url("../lib/fonts/roboto-googlefont/Roboto-BoldItalic.ttf");
+}
+
+
+
+/*Segoe UI*/
+@font-face {
+	font-family: "segoe-ui";
+	src: url("../lib/fonts/segoe-UI/Segoe-UI.woff");
+}
+
+
+@font-face {
+	font-family: "segoe-ui-italic";
+	src: url("../lib/fonts/segoe-UI/Segoe-UI-Italic.woff");
+}
+
+@font-face {
+	font-family: "segoe-ui-semibold";
+	src: url("../lib/fonts/segoe-UI/Segoe-UI-semibold.ttf");
+}
+
+@font-face {
+	font-family: "segoe-ui-bold";
+	src: url("../lib/fonts/segoe-UI/Segoe-UI-Bold.woff");
+}
+
+@font-face {
+	font-family: "segoe-ui-bold-italic";
+	src: url("../lib/fonts/segoe-UI/Segoe-UI-Bold-Italic.woff");
+}

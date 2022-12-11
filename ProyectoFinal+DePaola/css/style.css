@@ -1,0 +1,1311 @@
+
+
+body{
+	margin: 0;
+	padding: 0;
+
+	background-color: #E8E8E8;
+	/*line-height: 0;*/
+}
+
+
+body::-webkit-scrollbar {
+		width: 12px;
+		height: 4px;
+		padding: 0px 45px 0px 45px;
+	}
+
+	body::-webkit-scrollbar-thumb{
+		background-color:#CBCBCB;
+	/*	border-radius: 10px;*/
+	}
+
+	body::-webkit-scrollbar-thumb:hover{
+		background-color: #ca0000d4
+	}
+
+	body::-webkit-scrollbar-button{
+		/*width: 22.5px;*/
+		height: 0px;
+	}
+
+
+
+
+
+
+.segoe_semiblond{
+	font-family: "segoe-ui-semibold";
+}
+
+
+.section_gral{
+	position: relative;
+	max-width: 1600px;
+
+    margin: 0 auto 20px auto;
+}
+
+/*Si es menor a 576:*/
+@media (max-width: 576px){
+	.section_gral{
+	}
+}
+
+.section_titulo{
+	position: relative;
+	width: 90%;
+
+	font-family: "segoe-ui";
+	font-size: 14px;
+
+	/*margin-bottom: 0px;*/
+	margin: 0px 0px 10px 45px;
+
+	/*background-color: blue;*/
+}
+
+
+
+
+#cointainer_banner{
+	position: relative;
+
+	width: 100%;
+	height: auto;
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px auto 75px auto;
+
+	overflow-x: hidden;
+    /*background-color: red;*/
+}
+#img_banner{
+	max-height: 380px;
+}
+
+
+
+
+#section_logo{
+	position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+#img_logo{
+	position: absolute;
+    bottom: -53px;
+
+    width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION JUGADORES ONLINE - jugOn */
+
+
+
+#jug_on_tit{
+	margin-bottom: 0px;
+}
+
+#jugOn_container{
+
+	width: 100%;
+
+	display: inline-flex;
+
+	overflow-x: scroll;
+
+	padding: 0px 0px 0px 0px;
+	margin:  0px 0px 0px 0px;
+
+}
+
+	#jugOn_container::-webkit-scrollbar {
+		width: 8px;
+		height: 4px;
+		padding: 0px 45px 0px 45px;
+	}
+
+	#jugOn_container::-webkit-scrollbar-thumb{
+		background-color: #cdcdcd;
+		border-radius: 10px;
+	}
+
+	#jugOn_container::-webkit-scrollbar-thumb:hover{
+		background-color: #CC0000;
+	}
+
+	#jugOn_container::-webkit-scrollbar-button{
+		width: 22.5px;
+	}
+
+
+
+#jugOn_SubContainer{
+	display: flex;
+	padding: 10px 10px 0px 45px;
+	margin-bottom: 18px;
+}
+
+
+.jugOn_img_container{
+	position: relative;
+
+	width: 85px;
+	height: 85px;
+
+    margin-right: 18px;
+    
+	/*background-color: green;*/
+}
+
+
+.jugOn_img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	cursor: pointer;
+
+	border-radius: 50%;
+
+    -webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);
+
+    transition: .2s;
+}
+.jugOn_img:hover{
+	-webkit-box-shadow: 1px 3px 11px 1px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 1px rgb(0 0 0 / 65%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION PARTIDOS ABIERTOS - partAb*/
+/*-------------------------------------*/
+
+#section_partAb{
+	position: relative;
+/*	margin-bottom: 20px;*/
+}
+
+#partAb_container{
+
+	width: 100%;
+
+	display: inline-flex;
+
+	overflow-x: scroll;
+/*
+	padding: 13px 45px 4px 45px;
+	margin: 0px 45px 10px -45px;
+*/
+}
+
+	#partAb_container::-webkit-scrollbar {
+		width: 8px;
+		height: 4px;
+		padding: 0px 45px 0px 45px;
+	}
+
+	#partAb_container::-webkit-scrollbar-thumb{
+		background-color: #cdcdcd;
+		border-radius: 10px;
+	}
+
+	#partAb_container::-webkit-scrollbar-thumb:hover{
+		background-color: #CC0000;
+	}
+
+	#partAb_container::-webkit-scrollbar-button{
+		width: 22.5px;
+	}
+
+
+
+#partAb_SubContainer{
+	display: flex;
+	padding: 0px 10px 0px 45px;
+	margin-bottom: 18px;
+}
+
+
+.partAb_img_container{
+	position: relative;
+
+	width: 180px;
+	height: 272px;
+
+    margin-right: 18px;
+    border-radius: 5px;
+
+	background-color: white;
+
+	cursor: pointer;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 10%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 10%);
+
+}
+
+.partAb_img_container:hover{
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);	
+}
+
+
+.partAb_img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+
+
+
+	border-radius: 5px;
+
+    -webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);
+
+    transition: .1s;
+}
+
+/*
+.partAb_img:hover {
+	-webkit-box-shadow: 1px 3px 11px 1px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 1px rgb(0 0 0 / 65%);
+}
+*/
+
+
+
+.partAv_txt_content{
+	padding: 0 13px;
+}
+
+
+.partAb_tit{
+	font-family: "roboto-400";
+	font-size: 14px;
+
+	margin-top: 7px;
+}
+
+
+
+.partAb_sub{
+	font-family: "roboto-400";
+	font-size: 11px;
+    color: #0000007a;
+
+	margin-top: 1px;
+}
+
+.partAb_pre{
+	font-family: "roboto-400";
+	font-size: 18px;
+	color: #000000;
+
+	margin-top: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION PARTIDOS CONFIRMADOS - partConf */
+/*-------------------------------------*/
+
+#section_partConf{
+	position: relative;
+	margin-bottom: 130px;
+}
+
+#partConf_container{
+
+	width: 100%;
+
+	/*display: inline-flex;*/
+
+	overflow-x: scroll;
+/*
+	padding: 13px 45px 4px 45px;
+	margin: 0px 45px 10px -45px;
+*/
+}
+
+	#partConf_container::-webkit-scrollbar {
+		width: 8px;
+		height: 4px;
+		padding: 0px 45px 0px 45px;
+	}
+
+	#partConf_container::-webkit-scrollbar-thumb{
+		background-color: #cdcdcd;
+		border-radius: 10px;
+	}
+
+	#partConf_container::-webkit-scrollbar-thumb:hover{
+		background-color: #CC0000;
+	}
+
+	#partConf_container::-webkit-scrollbar-button{
+		width: 22.5px;
+	}
+
+
+
+#partConf_SubContainer{
+	/*column-count: 3;*/
+
+	padding: 13px 10px 0px 45px;
+	/*margin-bottom: 18px;*/
+
+    height: 100%;
+
+    /*
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	*/
+
+
+	display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+
+    transition: .1s;
+}
+
+
+.partConf_img_container{
+	position: relative;
+
+	width: 378px;
+	height: 70px;
+
+    margin: 0px 18px 33px 0px;
+    border-radius: 5px;
+
+	/*background-color: white;*/
+
+
+	/*overflow-y: hidden;*/
+
+}
+
+/*
+.partConf_img_container:hover{
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);	
+}
+*/
+
+.partConf_img{
+	position: absolute;
+	z-index: 2;
+	top: -6px;
+
+	width: 237px;
+	height: 80px;
+	
+	object-fit: cover;
+	cursor: pointer;
+
+	border-radius: 5px;
+
+    -webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);
+
+    transition: .1s;
+}
+
+.partConf_img:hover  {
+	z-index: 15;
+
+	-webkit-box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 39%);
+    box-shadow: 		1px 3px 9px 2px rgb(0 0 0 / 39%);
+}
+
+
+.partConf_txt_content{
+	position: absolute;
+	z-index: 0;
+	width: 140px;
+	height: 100%;
+
+	left: 82px;
+/*	left: 170px;*/
+
+	border-radius: 4px;
+	padding: 0 13px;
+	text-align: end;
+	background-color: white;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 20%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 20%);
+
+    transition: .1s;
+}
+
+
+
+.partConf_img:hover ~ .partConf_txt_content {
+	left: 170px;
+	z-index: 10;
+}
+
+
+
+
+.partConf_tit{
+	font-family: "roboto-400";
+	font-size: 18px;
+	margin-top: 8px;
+}
+
+
+
+.partConf_sub{
+	font-family: "roboto-400";
+	font-size: 11px;
+    color: #7c7c7c;
+}
+
+.partConf_pre{
+	font-family: "roboto-400";
+	font-size: 18px;
+	color: #000000;
+
+	/*margin-top: 5px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BUTTON NEW PARTIDO*/
+/*-------------------------------------*/
+
+#btnNewPartido_content{
+	position: fixed;
+	z-index: 1;
+    bottom: 26px;
+    right: 37px;
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	padding: 10px 10px 10px 0px;
+
+	width: 191px;
+    height: 38px;
+
+    cursor: pointer;
+
+	background-color: #CA0000;
+	border: 0px solid;
+	border-radius: 30px;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);
+
+    transition: .1s;
+
+    display: none;
+}
+
+#btnNewPartido_content:hover{
+	bottom: 28px;
+    right: 39px;
+
+	-webkit-box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 45%);
+    box-shadow: 		1px 3px 9px 2px rgb(0 0 0 / 45%);	
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' -25,
+  'opsz' 48
+}
+#btnNewPartido_icon{
+	color: #ebebeb;
+	font-size: 25px;
+}
+
+
+#btnNewPartido_txt{
+	color: #ebebeb;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#fondo_negro{
+	position: fixed;
+	z-index: 20;
+
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+	background-color: #000000e3;
+
+	display: none;
+}
+
+
+
+
+
+
+/* POP UP PERFIL */
+/*-------------------------------------*/
+
+#popUp_perfil_content{
+	position: fixed;
+	z-index: 25;
+	top: 30vh;
+
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 331px;
+	height: 265px;
+
+	border-radius: 10px;
+
+	background-color: #ffffff8a;	
+
+	text-align: center;
+	
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 65%);
+
+    transition: .1s;
+
+    cursor: pointer;
+	display: none;
+}
+
+#popUp_perfil_content:hover{
+	/*translate: 0px -5px;*/
+	background-color: #ffffff9e;
+}
+
+
+#popUp_perfil_photo{
+	position: absolute;
+	top: -55px;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 150px;
+	height: 150px;
+
+	object-fit: cover;
+
+	border-radius: 50%;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);
+}
+
+
+
+#popUp_tit{
+	margin: 111px 0px 0px 0px;
+
+	font-family: "segoe-ui";
+	font-size: 24px;
+}
+
+#popUp_quali{
+	margin: 17px 0px 0px 0px;
+
+	font-family: "segoe-ui";
+	font-size: 47px;
+	letter-spacing: -2px;
+}
+
+
+#popUp_star{
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* POP UP CREAR PARTIDO */
+/*-------------------------------------*/
+
+#popUp_newpartido_cont{
+	position: fixed;
+	z-index: 25;
+
+	width: 331px;
+	/*height: 265px;*/
+
+	border-radius: 10px;
+	padding: 0px 0px 40px 0px;
+
+	text-align: center;
+
+	background-color: #ffffffb3;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 65%);
+
+    transition: .1s;
+
+    display: none;
+}
+
+#popUp_newpartido_cont:hover{
+	/*translate: 0px -5px;*/
+
+	background-color: #ffffffb8;
+}
+
+
+#popUp_newpart_photo{
+	position: absolute;
+	top: -55px;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 160px;
+	height: 160px;
+
+	object-fit: cover;
+
+	border-radius: 50%;
+/*
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);*/
+}
+
+
+#select_newpartido{
+    width: 260px;
+    height: 30px;
+    
+    padding: 0px 20px 0px 20px;
+	margin: 20px 0px 25px 0px;
+    border: 0px solid;
+    border-radius: 3px;
+
+    font-family: "segoe-ui";
+	font-size: 15px;
+
+	outline: none;
+}
+
+
+.inputs{
+	width: 236px;
+    height: 33px;
+    
+    padding: 0px 0px 0px 24px;
+    margin: 0px 0px 7px 0px;
+	border: 0px;
+	border-radius: 3px;
+
+	font-family: "roboto-400";
+	font-size: 13px;
+	color: #565656;
+
+	outline: none;
+}
+
+
+#btnCrearPart_content{
+	width: 171px;
+    height: 32px;
+
+    cursor: pointer;
+
+	background-color: #CA0000;
+	border: 0px solid;
+	border-radius: 30px;
+	margin: 35px 0px 0px 0px;
+
+	-webkit-box-shadow: 0px 3px 4px 0px rgb(0 0 0 / 25%);
+    box-shadow: 		0px 3px 4px 0px rgb(0 0 0 / 25%);
+
+    transition: .1s;
+}
+
+#btnCrearPart_content:hover{
+	bottom: 28px;
+    right: 39px;
+
+	-webkit-box-shadow: 1px 3px 9px 2px rgb(0 0 0 / 35%);
+    box-shadow: 		1px 3px 9px 2px rgb(0 0 0 / 35%);	
+}
+
+#btnCrearPart_txt{
+	color: #ebebeb;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* POP UP SUMARSE A PARTIDO */
+/*-------------------------------------*/
+
+#popUp_sumarsePart_cont{
+	position: fixed;
+	z-index: 25;
+
+	top: 14vh;
+
+
+
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+	width: 331px;
+	/*height: 265px;*/
+
+	border-radius: 10px;
+	padding: 0px 0px 40px 0px;
+
+	text-align: center;
+
+	background-color: #ffffffb3;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 65%);
+
+    transition: .1s;
+
+    background-image: url("../img/canchas/tenis_1.jpg");
+	background-position: center;
+	background-size: cover;
+
+	display: none;
+}
+
+#popUp_sumarsePart_cont:hover{
+	/*translate: 0px -5px;*/
+
+	background-color: #ffffffb8;
+}
+
+
+#popUp_sumarsePart_photo{
+	position: absolute;
+	top: -55px;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 160px;
+	height: 160px;
+
+	object-fit: cover;
+
+	border-radius: 50%;
+/*
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);*/
+}
+
+
+#popUp_sumarsePart_info_cont{
+	width: 200px;
+	height: 200px;
+
+	margin: 145px auto 35px auto;
+	border-radius: 5px;
+
+	background-color: #ffffffd9;
+
+	-webkit-box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 52%);
+    box-shadow: 		0px 0px 7px 0px rgb(0 0 0 / 52%);
+}
+
+
+#sumarsePart_tit{
+	padding: 30px 10px 5px 10px;
+
+	font-family: "roboto-400";
+	font-size: 18px;
+	color: #1e1e1e;
+
+	border-bottom: 1px solid #00000047;
+}
+
+#sumarPart_suelo{
+	padding: 30px 20px 5px 20px;
+
+	font-family: "roboto-400";
+	font-size: 13px;
+	color: #6c6c6c;
+}
+
+#sumarPart_jugadores{
+	padding: 0px 20px 5px 20px;
+
+	font-family: "roboto-400";
+	font-size: 13px;
+	color: #6c6c6c;
+}
+
+#sumarPart_Precio{
+	padding: 15px 20px 5px 20px;
+
+	font-family: "roboto-500";
+	font-size: 18px;
+	color: black;
+}
+
+
+
+#btn_sumarsePart_content{
+	width: 171px;
+    height: 32px;
+
+    cursor: pointer;
+
+	background-color: #CA0000;
+	border: 0px solid;
+	border-radius: 30px;
+	margin: 35px 0px 0px 0px;
+
+	-webkit-box-shadow: 0px 3px 4px 0px rgb(0 0 0 / 25%);
+    box-shadow: 		0px 3px 4px 0px rgb(0 0 0 / 25%);
+
+    transition: .1s;
+}
+
+#btn_sumarsePart_content:hover{
+	bottom: 28px;
+    right: 39px;
+
+	-webkit-box-shadow: 0px 3px 4px 0px rgb(0 0 0 / 35%);
+    box-shadow: 		0px 3px 4px 0px rgb(0 0 0 / 35%);	
+}
+
+#btn_sumarsePart_txt{
+	color: #ebebeb;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* POP UP BAJAR A PARTIDO */
+/*-------------------------------------*/
+
+#popUp_bajaPart_cont{
+	position: fixed;
+	z-index: 25;
+
+	top: 14vh;
+
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+	width: 331px;
+	/*height: 265px;*/
+
+	border-radius: 10px;
+	padding: 0px 0px 40px 0px;
+
+	text-align: center;
+
+	background-color: #ffffffb3;
+
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 65%);
+
+    transition: .1s;
+
+    background-image: url("../img/canchas/tenis_1.jpg");
+	background-position: center;
+    background-size: cover;
+
+	display: none;
+
+}
+
+#popUp_bajaPart_cont:hover{
+	/*translate: 0px -5px;*/
+
+	background-color: #ffffffb8;
+}
+
+
+#popUp_bajaPart_photo{
+	position: absolute;
+	top: -55px;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 160px;
+	height: 160px;
+
+	object-fit: cover;
+
+	border-radius: 50%;
+/*
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 25%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 25%);*/
+}
+
+
+#popUp_bajaPart_info_cont{
+	width: 200px;
+	height: 200px;
+
+	margin: 145px auto 35px auto;
+	border-radius: 5px;
+
+	background-color: #ffffffd9;
+
+	-webkit-box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 52%);
+    box-shadow: 		0px 0px 7px 0px rgb(0 0 0 / 52%);
+}
+
+
+#bajaPart_tit{
+	padding: 30px 10px 5px 10px;
+
+	font-family: "roboto-400";
+	font-size: 18px;
+	color: #1e1e1e;
+
+	border-bottom: 1px solid #00000047;
+}
+
+#bajaPart_suelo{
+	padding: 30px 20px 5px 20px;
+
+	font-family: "roboto-400";
+	font-size: 13px;
+	color: #6c6c6c;
+}
+
+#bajaPart_jugadores{
+	padding: 0px 20px 5px 20px;
+
+	font-family: "roboto-400";
+	font-size: 13px;
+	color: #6c6c6c;
+}
+
+#bajaPart_Precio{
+	padding: 15px 20px 5px 20px;
+
+	font-family: "roboto-500";
+	font-size: 18px;
+	color: black;
+}
+
+
+
+#btn_bajaPart_content{
+	width: 171px;
+    height: 32px;
+
+    cursor: pointer;
+
+	background-color: #CA0000;
+	border: 0px solid;
+	border-radius: 30px;
+	margin: 35px 0px 0px 0px;
+
+	-webkit-box-shadow: 0px 3px 4px 0px rgb(0 0 0 / 25%);
+    box-shadow: 		0px 3px 4px 0px rgb(0 0 0 / 25%);
+
+    transition: .1s;
+}
+
+#btn_bajaPart_content:hover{
+	bottom: 28px;
+    right: 39px;
+
+	-webkit-box-shadow: 0px 3px 4px 0px rgb(0 0 0 / 35%);
+    box-shadow: 		0px 3px 4px 0px rgb(0 0 0 / 35%);	
+}
+
+#btn_bajaPart_txt{
+	color: #ebebeb;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* POP UP INFO */
+/*-------------------------------------*/
+
+#popUp_info_content{
+	position: fixed;
+	z-index: 25;
+
+	top: 30vh;
+
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 395px;
+
+	border-radius: 10px;
+
+	background-color: #ffffffb8;	
+
+	text-align: center;
+	
+	-webkit-box-shadow: 1px 3px 11px 2px rgb(0 0 0 / 65%);
+    box-shadow: 		1px 3px 11px 2px rgb(0 0 0 / 65%);
+
+    transition: .1s;
+
+    cursor: pointer;
+
+    display: none
+}
+
+#popUp_info_content:hover{
+	/*translate: 0px -5px;*/
+	background-color: #ffffffc9;
+}
+
+
+
+
+#popUp_info_tit{
+	margin: 30px 0px 0px 0px;
+
+	font-family: "segoe-ui";
+	font-size: 29px;
+}
+
+
+#popUp_info_txt{
+	margin: 16px 0px 0px 0px;
+    padding: 0px 20px 31px 20px;
+
+    font-family: sans-serif;
+    font-size: 17px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
