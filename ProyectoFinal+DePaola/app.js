@@ -5,6 +5,25 @@
 // FUNCIONES
 // -------------------------------------
 
+// Imprime popUp
+const popUp_correcto = (titulo,text) => {
+  Swal.fire({
+    title: titulo,
+    text: text,
+    icon: 'success',
+    confirmButtonText: 'Ok'
+  })
+}
+
+const popUp_sinIcon = (titulo,text) => {
+  Swal.fire({
+    title: titulo,
+    text: text,
+    confirmButtonText: 'Ok'
+  })
+}
+
+
 
 // Devuelve al azar 1 o 0 (uno o cero)
 //-------------------------------------
@@ -46,7 +65,7 @@ const jugadores_online_alAzar = (array) => {
 
 
 
-// Sumo al partido
+// Usuario se suma al partido
 // -------------------------------------
 sumarse_al_partido = (e) => {
     // Tomo el id del partido seleccionado
@@ -71,13 +90,16 @@ sumarse_al_partido = (e) => {
 
     // Css - 
     popUp_sumarsePart_cont.style.display = 'none'
-    mostrar_popUp_info('Te has sumado al partido correctamente')
+    fondo_negro.style.display = 'none'
+    //mostrar_popUp_info('Te has sumado al partido correctamente')
 
 
     // Imprimo partido en la seccion de confirmados
     //agregar_partido_a_confirmados(partido_select_id);
     renderizar_partidosConfirmados();
     renderizar_partidosAbiertos();
+
+    popUp_correcto('Estas adentro', 'Te has sumado correctamente al partido');
 }
 
 
@@ -231,7 +253,9 @@ const darseDeBaja = (e) =>{
 
     // Css
     popUp_bajaPart_cont.style.display = 'none'
-    mostrar_popUp_info('Te has dado de baja correctamente')
+    fondo_negro.style.display = 'none'
+    popUp_sinIcon('Baja','Te has dado de baja correctamente')
+    //mostrar_popUp_info('Te has dado de baja correctamente')
 
     renderizar_partidosConfirmados()
     renderizar_partidosAbiertos()
